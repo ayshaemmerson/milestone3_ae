@@ -4,11 +4,16 @@ author: "Aysha Emmerson"
 date: "04/10/2019"
 output: html_document
 ---
-
-```{r setup, include=FALSE}
+```{r setup, include=TRUE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
 
+#Loaded dataset from excel, which details the location and frequencies of gun deaths in 2019. This data was obtained from https://www.gunviolencearchive.org, which is a non-partisan group that collects data on all acts of gun violence in the United States (2013-present).
 
+gundeaths2019 <- read_excel("~/Desktop/raw_data/gundeaths_2019.xlsx")
+
+#I plan to compare the frequency of gun deaths in 2019 by location, to a dataset from OpenSecrets, which details how much each member of the 116th congress receives in donations from gun control versus gun rights lobbiest groups. I also would like to compare this data to the broader ideologies of the area, especially their levels of trust in government. I plan to obtain this data from Pew Research Centre; however, have been having issues downloading the specific dataset I need, and will continue working on this over the weekend. 
 
 
 ```
